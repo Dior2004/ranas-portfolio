@@ -244,10 +244,10 @@ button i:hover {
 
   .drop-down {
     display: none;
-    min-width: 100px;
+    min-width: 130px;
     position: absolute;
     top: 30px;
-    left: -55%;
+    left: -75%;
     background-color: var(--main-dropdown-bac-color);
     padding: 5px;
     border-radius: 8px;
