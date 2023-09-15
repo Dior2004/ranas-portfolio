@@ -127,6 +127,10 @@ header {
   border-radius: 59% 91% 100% 58% / 49% 55% 100% 100%;
 }
 
+.img-side .shape img:hover {
+  scale: 1.05;
+}
+
 @media (max-width: 1260px) {
   .img-side .shape {
     width: 320px;
