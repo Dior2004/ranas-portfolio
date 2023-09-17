@@ -198,14 +198,15 @@ main {
 main > div {
   width: 70%;
   max-width: 1200px;
+  margin: 100px 0;
 }
 
 .about {
   min-height: 500px;
-  margin: 100px 0;
 }
 
-.about h1 {
+main > div > h1,
+main > div > p {
   text-align: center;
 }
 
@@ -230,6 +231,42 @@ main > div {
 
 .about .details {
   padding-left: 50px;
+}
+
+/* Skills */
+
+.skills-ul-wrapper {
+  width: 100%;
+  min-height: 500px;
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.skills-ul-wrapper ul li {
+  margin: 10px 0;
+}
+
+.skills-ul-wrapper ul {
+  min-width: 275px;
+  background-color: var(--main-dropdown-bac-color);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 2px 3px 15px var(--main-shadows);
+}
+
+.skills-ul-wrapper ul:hover {
+  scale: 1.05;
+  box-shadow: 3px 5px 20px var(--main-shadows);
+}
+
+.skills-ul-wrapper ul h3 {
+  margin-bottom: 15px;
+  color: var(--main-hover-color);
 }
 
 /* desktop */
