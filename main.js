@@ -2,6 +2,10 @@ let barsIcon = document.querySelector("#bars");
 let dropDown = document.querySelector(".drop-down");
 let moon = document.querySelector("#moon");
 let sun = document.querySelector("#sun");
+let workSide = document.querySelector("#workSide");
+let eduSide = document.querySelector("#eduSide");
+let experience = document.querySelector("#experience");
+let education = document.querySelector("#education");
 let dropDownToggle = false;
 
 barsIcon.addEventListener("click", () => {
@@ -57,3 +61,21 @@ function updateStyleDropDown() {
 }
 
 window.addEventListener("resize", updateStyleDropDown);
+
+workSide.addEventListener("click", () => {
+  if (workSide.className !== "activeSide") {
+    workSide.className = "activeSide";
+    eduSide.className = "";
+    experience.style.display = "flex";
+    education.style.display = "none";
+  }
+});
+
+eduSide.addEventListener("click", () => {
+  if (eduSide.className !== "activeSide") {
+    eduSide.className = "activeSide";
+    workSide.className = "";
+    experience.style.display = "none";
+    education.style.display = "flex";
+  }
+});

@@ -270,6 +270,48 @@ main > div > p {
   color: var(--main-hover-color);
 }
 
+/* Work */
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work .select-wrap {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.select-wrap div {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.select-wrap div i {
+  transition: 0s;
+}
+
+.select-wrap div:hover {
+  color: var(--main-hover-color);
+}
+
+.activeSide {
+  color: var(--main-hover-color);
+}
+
+#experience,
+#education {
+  width: 100%;
+  padding: 15px 0;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* desktop */
 @media (min-width: 1050px) {
   .nav-inner {
