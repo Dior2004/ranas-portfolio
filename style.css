@@ -294,10 +294,6 @@ main > div > p {
   transition: 0s;
 }
 
-.select-wrap div:hover {
-  color: var(--main-hover-color);
-}
-
 .activeSide {
   color: var(--main-hover-color);
 }
