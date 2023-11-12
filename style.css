@@ -302,10 +302,67 @@ main > div > p {
 #education {
   width: 100%;
   padding: 15px 0;
-  background-color: red;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.box {
+  width: 300px;
+  min-height: 100px;
+  padding-bottom: 30px;
+}
+
+.odd {
+  padding-right: 30px;
+  border-right: 3px solid var(--main-hover-color);
+  transform: translateX(calc(-50% + 1.5px));
+}
+
+.odd::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -9px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--main-hover-color);
+  border-radius: 100%;
+}
+
+.even {
+  padding-left: 30px;
+  border-left: 3px solid var(--main-hover-color);
+  transform: translateX(calc(50% - 1px));
+}
+
+.even::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -9px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--main-hover-color);
+  border-radius: 100%;
+}
+
+.box p {
+  margin: 8px 0;
+}
+
+.box p:first-child {
+  margin-top: 0;
+  color: var(--main-hover-color);
+}
+
+.box:last-child {
+  border: none;
+}
+
+.box:last-child::before {
+  top: -6px;
 }
 
 /* desktop */
