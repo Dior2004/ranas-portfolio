@@ -238,7 +238,6 @@ main > div > p {
 
 .skills-ul-wrapper {
   width: 100%;
-  min-height: 500px;
   margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
