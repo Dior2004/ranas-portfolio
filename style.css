@@ -495,4 +495,32 @@ main > div > p {
   .about-flex .details {
     padding: 30px 0 0 0;
   }
+
+  .box {
+    width: 100%;
+    max-width: 322px;
+    min-height: 100px;
+    padding-bottom: 30px;
+  }
+
+  .even,
+  .odd {
+    padding-right: 0;
+    padding-left: 30px;
+    border-right: 0px;
+    border-left: 3px solid var(--main-hover-color);
+    transform: translateX(0);
+  }
+
+  .even::before,
+  .odd::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -9px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-hover-color);
+    border-radius: 100%;
+  }
 }

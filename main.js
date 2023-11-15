@@ -43,7 +43,7 @@ let workExperience = [
     id: 6,
     date: "2014/03 - 2015/03",
     title: "Commis Chef",
-    text: "Grosvenor House, A Luxury Collection Hotel, Dubai, UAE ( <br /> <strong>In Rhodes W 1</strong> - a modern British Cuisine restaurant by Michelin star chef Gary Rhodes)",
+    text: "Grosvenor House, A Luxury Collection Hotel, Dubai, UAE (<strong>In Rhodes W 1</strong> - a modern British Cuisine restaurant by Michelin star chef Gary Rhodes)",
   },
   {
     id: 7,
@@ -138,10 +138,6 @@ eduSide.addEventListener("click", () => {
 });
 
 workExperience.map((i) => {
-  // let paragraph = document.createElement("p");
-  // paragraph.innerHTML = i.date;
-  // experience.appendChild(paragraph);
-
   if (i.id % 2 == 0) {
     let boxEven = `
     <div class="box even">
