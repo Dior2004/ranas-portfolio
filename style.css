@@ -381,6 +381,7 @@ main > div > p {
 }
 
 .grid .container {
+  background-color: #00000020;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 2px 5px #00000035;
